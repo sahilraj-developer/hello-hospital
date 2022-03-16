@@ -1,0 +1,695 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@1,300&family=Roboto+Condensed:ital,wght@1,300&family=Sansita+Swashed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ramaraja&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+body{
+  min-height:100vh;
+  
+}
+a{
+    text-decoration: none;
+}
+section{
+    height: 100vh;  
+}
+.row{
+  
+  font-family: 'Averia Sans Libre', cursive; 
+
+}
+h3{
+  font-family: 'Sansita Swashed', cursive;
+}
+h4{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+header
+
+header a {
+    text-decoration: none;
+  }
+  
+  header {
+    padding: 0 20px;
+    background-color: #d11eb3;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+   
+    width: 100%;
+  }
+  .nav1{ display: flex;
+align-items: center;}
+  .nav2{ display: flex;
+    align-items: center;}
+  .nav3{ display: flex;
+    align-items: center; }
+  
+  /* #brand {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  } */
+  
+  
+  ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+  }
+  
+  ul a {
+      font-weight: 800;
+    color: white;
+    font-size: 17px;
+  }
+  ul .btn{
+     padding-left: 10rem;
+  }
+  ul li {
+    padding: 5px;
+    margin-left: 10px;
+    display: flex;
+  }
+  
+  ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+  
+  #login,
+  #signup {
+    border-radius: 5px;
+    padding: 5px 8px;
+  }
+  
+  #login {
+    border: 1px solid #09e026;
+    background-color: rgb(36, 218, 163);
+    background-color: white;
+  }
+  
+  #signup {
+    border: 1px solid orange;
+    background-color:pink;
+  }
+  
+  #signup a {
+    color: black;
+  }
+  
+  #login a {
+    color:black;
+  }
+  
+  #hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  #hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .open .bar2 {
+    opacity: 0;
+  }
+  
+  .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+  
+  .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+  }
+  
+  .mobile-menu li {
+    margin-bottom: 10px;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    header nav {
+      display: none;
+    }
+    header nav ul{
+        display: none;
+    }
+  
+    #hamburger-icon {
+      display: block;
+   
+    }
+    .mobile-menu{
+        background-color: purple;
+        height: 50vh;
+    }
+  }
+  
+/* header*/
+button a{
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+}
+/* home    index.html  */
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home .row{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(240, 206, 212);
+    height: 100vh;  
+   
+    
+
+}
+.home .row .left{
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(240, 206, 212);
+    flex-wrap: wrap;
+}
+.home .row .left h1{
+    font-size: 4rem;
+    font-weight: 800;
+
+}
+.home .left h3{
+    font-size: 2.7rem;
+    font-weight: 500;
+
+}
+.home .left h4{
+    font-size: 1.8rem;
+    font-weight: 400;
+
+}
+.home .left button{
+   
+    padding: 18px;
+    border-width: 0;
+    border-radius: 0  14px 0 14px;
+    background-color: rgb(224, 19, 53);
+}
+.home .left button:hover{
+    background-color: white;
+}
+#home .row .right{
+    flex-basis: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(240, 206, 212);
+   
+}
+#home .row .right img{
+   width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: rgb(240, 206, 212);
+    border-radius: 50px;
+}
+
+
+/* home */
+
+/* about */
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(240, 206, 212);
+  height: 100vh;  
+ 
+  
+
+}
+.about .row .left{
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(240, 206, 212);
+  /* flex-wrap: wrap; */
+}
+.about .row .left h1{
+  font-size: 3.6rem;
+  font-weight: 800;
+
+}
+.about .left h3{
+  font-size: 2.2rem;
+  font-weight: 500;
+
+}
+.about .left h4{
+  font-size: 1.8rem;
+  font-weight: 400;
+
+}
+.about .left p{
+  font-size: 1.4rem;
+  font-weight: 400;
+
+}
+.about .left button{
+ 
+  padding: 18px;
+  border-width: 0;
+  border-radius: 0  14px 0 14px;
+  background-color: rgb(224, 19, 53);
+}
+.about .left button:hover{
+  background-color: white;
+}
+#about .row .right{
+  flex-basis: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(240, 206, 212);
+ 
+}
+#about .row .right img{
+ width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: rgb(240, 206, 212);
+  border-radius: 50px;
+}
+
+/* about */
+
+/* ambulance */
+.ambulance{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  background-color:rgb(240, 206, 212);
+
+}
+.ambulance .cards{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+ 
+  width: 100vw;
+  flex-wrap: wrap;
+}
+.ambulance .cards div{
+  width: 18rem;
+  height: 18rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #eb60eb;
+  border-radius: 18px 0;
+
+}
+.ambulance .cards div:hover{
+  background-color: white;
+}
+.ambulance .cards div img{
+  width: 100%;
+  height: auto;
+}
+.ambulance .cards div h3{
+ display: flex;
+ align-items: center;
+ justify-content: baseline;
+}
+.ambulance .cards div button{
+  padding: 10px;
+  width: 80%;
+  height: auto;
+  border: 0px;
+  border-radius: 10px;
+   overflow: hidden;
+   cursor: pointer;
+}
+.ambulance .cards div button:hover{
+  background-color: #eb60eb;
+
+}
+/* ambulance */
+
+
+/* corona */
+.corona{
+  background-color:rgb(240, 206, 212);
+
+}
+
+/* corona */
+
+
+/* doctor */
+.doctor{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  background-color:rgb(240, 206, 212);
+
+}
+.doctor .cards{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  width: 100vw;
+  flex-wrap: wrap;
+ 
+}
+.doctor .cards div{
+  width: 17rem;
+  height: 18rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #eb60eb;
+  border-radius: 18px 0;
+  margin: 0.7rem;
+  padding: 10px;
+ 
+
+}
+.doctor .cards div:hover{
+  background-color: white;
+}
+.doctor .cards div img{
+  width: 100%;
+  height: 100%;
+}
+.doctor .cards div h3{
+ display: flex;
+ align-items: center;
+ justify-content: baseline;
+ overflow-y: hidden;
+ padding-bottom: 10px;
+}
+.doctor .cards div button{
+  padding: 10px;
+  width: 80%;
+  height: auto;
+  border: 0px;
+  border-radius: 10px;
+   overflow: hidden;
+   cursor: pointer;
+}
+.doctor .cards div button:hover{
+  background-color: #eb60eb;
+
+}
+
+/* doctor */
+
+/* vaccine */
+.vaccine{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  background-color:rgb(240, 206, 212);
+
+}
+.vaccine .cards{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+ 
+  width: 100vw;
+  flex-wrap: wrap;
+}
+.vaccine .cards div{
+  width: 18rem;
+  height: 18rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #eb60eb;
+  border-radius: 18px 0;
+  padding-bottom: 10px;
+
+}
+.vaccine .cards div:hover{
+  background-color: white;
+}
+.vaccine .cards div img{
+  width: 100%;
+  height: auto;
+}
+.vaccine .cards div h3{
+ display: flex;
+ align-items: center;
+ justify-content: baseline;
+/* width: 100%; */
+overflow-y: hidden;
+padding: 1rem;
+
+
+}
+.vaccine .cards div button{
+  padding: 10px;
+  width: 80%;
+  height: auto;
+  border: 0px;
+  border-radius: 10px;
+   overflow: hidden;
+   cursor: pointer;
+}
+.vaccine .cards div button:hover{
+  background-color: #eb60eb;
+
+}
+
+/* vaccine */
+
+
+/* footer */
+
+footer{
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  height: 80vh;
+  /* align-items:center; */
+  padding: 0 20px;
+  background-color: black;
+  color:white;
+  padding: 30px;
+  position:sticky;
+  /* top:100%; */
+  
+
+}
+footer div{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  font-family: Candara;
+  flex-basis: 20%;
+  font-size: 17px;
+  
+}
+footer .f-1 img{ 
+  display: flex;
+  flex-direction: column;
+  
+}
+footer .f-2{
+  display: flex;
+  flex-direction: column;
+}
+footer .f-3{
+  display: flex;
+  flex-direction: column;
+  color: white;
+
+}
+
+
+
+
+/* footer */
+
+/* contact btn */
+
+
+.contact-btn{
+    /* padding: 5px; */
+    width: 14rem;
+    height: 4rem;
+    border-width: 0;
+    border-radius: 0  14px 0 14px;
+    background-color: rgb(224, 19, 53);
+
+}
+.contact-btn a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/*  */
+
+
+/* responsive area */
+
+@media only screen and (max-width: 800px){
+ section{
+   display: flex;
+   flex-direction: column;   
+  
+ }
+ section .row{
+  display: flex;
+  flex-direction: column; 
+
+ }
+ section .row .col{
+  font-size: 16px;
+
+ }
+ .ambulance{
+   display: block;
+ }
+ .ambulance .cards{
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+  
+ }
+ .ambulance .cards div{
+  width: 80%;
+  height:80%;
+  padding: 4rem;
+  margin: 1rem;
+ }
+
+ .doctor{
+  display: block;
+}
+.doctor .cards{
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+ 
+}
+.doctor .cards div{
+ width: 80%;
+ height:80%;
+ padding: 4rem;
+ margin: 0.7rem;
+}
+
+
+.vaccine{
+  display: flex;
+  flex-direction: column;  
+  height: auto;
+   align-items: center;
+}
+.vaccine .cards{
+  display: flex;
+  flex-direction: column;
+  /* padding: 7px; */
+  height: auto;
+ 
+}
+.vaccine .cards div{
+ width: 70%;
+ height:50%;
+ padding: 3rem;
+ margin: 1rem;
+}
+footer{
+  display: flex;
+  flex-direction: column;  
+  height: auto;
+   align-items: center;
+   justify-content: space-evenly;
+}
+footer div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+   align-items: center;
+   /* padding: 20px; */
+   /* width:   14rem; */
+
+}
+footer div p{
+  width: 100vw;
+  text-align: center;
+}
+footer .f-1{
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .f-1 img{
+ display: flex;
+ width: 100%;
+}
+footer .f-4{
+  padding-top: 20px;
+  display: flex;
+ 
+}
+
+
+
+}
